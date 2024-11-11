@@ -9,7 +9,7 @@ import { AfterContentInit, Component, OnChanges, OnDestroy, OnInit, Input } from
 })
 export class Ciclo1Component implements OnChanges, OnInit, AfterContentInit, OnDestroy {
 
-  @Input() nombre: string = '';
+  nombre: string = '';
   
   constructor() {
     console.log('Constructor lanzado!');
