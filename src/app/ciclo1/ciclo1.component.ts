@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { AfterContentInit, Component, OnChanges, OnDestroy, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ciclo1',
@@ -9,6 +9,8 @@ import { AfterContentInit, Component, OnChanges, OnDestroy, OnInit } from '@angu
 })
 export class Ciclo1Component implements OnChanges, OnInit, AfterContentInit, OnDestroy {
 
+  @Input() nombre: string = '';
+  
   constructor() {
     console.log('Constructor lanzado!');
   }
