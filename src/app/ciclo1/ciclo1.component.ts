@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { MensajesService } from '../services/mensajes.service';
 
 @Component({
   selector: 'app-ciclo1',
@@ -10,9 +11,14 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 export class Ciclo1Component implements OnInit, OnDestroy {
 
   nombre: string = '';
+  //Vamos a inyectar el servicio de mensajes
+  constructor(private mensajeService: MensajesService) {
+
+  }
 
   ngOnInit(): void {
-    console.log('Soy ngOnInit');
+    this.mensajeService.setMensaje('ngOnInit lanzado');
+    console.log(this.mensajeService.getMensaje);
   }
 
   ngOnDestroy(): void {
