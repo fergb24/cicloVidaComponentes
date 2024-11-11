@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MensajesService } from '../services/mensajes.service';
 
 @Component({
   selector: 'app-ciclo2',
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class Ciclo2Component {
 
+  constructor(private mensajesService: MensajesService) {}
+
+  ngOnInit() {
+    console.log(this.mensajesService.getMensaje());
+  }
 }

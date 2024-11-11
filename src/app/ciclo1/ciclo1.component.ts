@@ -17,7 +17,7 @@ export class Ciclo1Component implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.mensajeService.setMensaje('ngOnInit lanzado');
+    this.mensajeService.setMensaje('ngOnInit lanzado en ciclo1');
     console.log(this.mensajeService.getMensaje());
   }
 
