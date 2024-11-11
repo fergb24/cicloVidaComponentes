@@ -5,5 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class MensajesService {
 
-  constructor() { }
+  private mensaje: string = '';
+
+  getMensaje() {
+    return this.mensaje;
+  }
+
+  setMensaje(msg: string) {
+    this.mensaje = msg;
+  }
 }
