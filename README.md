@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Objetivo del proyecto
+
+El objetivo de este proyecto es ver como funciona el ciclo de vida de los componentes de Angular.
+Para ello, se crean 2 botones en el componente principal del proyecto con los que iremos jugando teniendo la consola del navegador abierta.
+En los logs de la consola, veremos en que momento se ejecutan los distintos métodos
